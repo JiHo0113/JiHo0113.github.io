@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ko" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JiHo Story - Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;800&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</head>
+<body>
+    <main id="container">
+        <!-- 첫 화면 -->
+        <!-- 인트로 이미지들 -->
+        <div class="intro_visual">
+            <!-- svg 파일 활용 -->
+            <div class="moving_text">
+                <svg id="text-container" xmlns="http://www.w3.org/2000/svg"viewBox="-40 -40 850 570">
+                    <path id="text-curve" d="M8.4,420.4 c-44.1-96.6,90-252.7,299.5-348.7 s415.2-95.5,459.3,1 s-90,252.7-299.5,348.7
+                    S52.5,517,8.4,420.4z" fill="none"/>
+                    <text font-size="1.5em" font-weight="bold" letter-spacing="-1px" fill="#445261">
+                        <textpath id="text-path" href="#text-curve">
+                            2023 PORT-FOLIO
+                            <animate attributeName="startOffset" from="0%" to ="100%" begin="0s" dur="10s" repeatCount="indefinite"/>
+                        </textpath>
+                    </text>
+                </svg>
+            </div> 
+            <img class="intro_img active" src="images/jiho-story.png" alt="jiho-story">
+            <img class="figure_1 moving" src="images/figure-1.png" alt="circle-figure">
+            <img class="figure_2 moving" src="images/figure-2-1.png" alt="hexagon-figure">
+            <img class="figure_3 moving" src="images/figure-3.png" alt="big star-figure">
+            <img class="figure_4 moving" src="images/figure-4.png" alt="small star-figure">
+            <button id="playButton" class="img-play_button"><a href="#folder"></a></button>
+        </div>
+        <div class="folder">
+            <!-- About Me 페이지 -->
+            <div id="page_1" class="folder_page active">
+                <div class="menu_bar">
+                    <ul class="menu_about_me">
+                        <li class="p-1 on"><a href="#page_1">About Me</a></li>
+                        <li class="p-2"><a href="#page_2">Info & Skills</a></li>
+                        <li class="p-3"><a href="#page_3">Web Story</a></li>
+                        <li class="p-4"><a href="#page_5">Edit Story</a></li>
+                        <li class="p-5"><a href="#page_7">Contact</a></li>
+                    </ul>
+                    <button type="button" class="img_close_button"></button>
+                </div>
+                <div id="contents_1">
+                    <div class="page_1_contents">
+                        <div class="profile_img"></div>
+                        <div class="profile">
+                            <div class="profile_information">
+                                <ul>
+                                    <li>
+                                        <span>Name.</span>
+                                        박지호  
+                                    </li>
+                                    <li>
+                                        <span>Birthday.</span>
+                                        1998 / 01 / 13
+                                    </li>
+                                    <li>
+                                        <span>MBTI.</span>
+                                        INFJ
+                                    </li>
+                                    <li>
+                                        <span>Like.</span>
+                                        춘식이, 게임, 맛있는 음식
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <div class="profile_introduce">                           
+                                <h3>때로는 공감을, 때로는 현실적으로!</h3>
+                                <p>공감이 필요할 때 공감해주고, 현실적인 부분에선 현실적으로 다가가는 디자이너 박지호 입니다!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Info & Skills 페이지 -->
+            <div id="page_2" class="folder_page">
+                <div class="menu_bar">
+                    <ul class="menu_info_and_skills">
+                        <li class="p-1"><a href="#page_1">About Me</a></li>
+                        <li class="p-2 on"><a href="#page_2">Info & Skills</a></li>
+                        <li class="p-3"><a href="#page_3">Web Story</a></li>
+                        <li class="p-4"><a href="#page_5">Edit Story</a></li>
+                        <li class="p-5"><a href="#page_7">Contact</a></li>
+                    </ul>
+                    <button type="button" class="img_close_button"></button>
+                </div>
+                <div id="contents_2">
+                    <div class="mine">
+                        <div class="my_info">
+                            <h3>My Info</h3>
+                            <ul>
+                                <li>
+                                    <span>2017</span>
+                                    완도고등학교 졸업
+                                </li>
+                                <li>
+                                    <span>2019</span>
+                                    조선이공대 시각애니메이션콘텐츠과 입학
+                                </li>
+                                <li>
+                                    <span>2021</span>
+                                    조선이공대 시각애니메이션콘텐츠과 졸업
+                                </li>
+                                <li>
+                                    <span></span>
+                                    '제이투모로우원' 입사
+                                </li>
+                                <li>
+                                    <span>2022</span>
+                                    '주머니기획' 입사
+                                </li>
+                                <li>
+                                    <span>2023</span>
+                                    SBS아카데미컴퓨터아트 '웹 디자인' 수료
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="my_license">
+                            <h3>My License</h3>
+                            <p>GTQ 1급, GTQ i 1급<br>
+                            컴퓨터그래픽스운용기능사, 웹디자인기능사<br>
+                            운전면허 2종 보통, 워드프로세서 2급</p>
+                        </div>
+                    </div>
+                    <div class="my_skills">
+                        <h3>My Skills</h3>
+                        <ul>
+                            <li>
+                                <span class="graph" ><span class="graph_in"></span></span>92%
+                            </li>
+                            <li>
+                                <span class="graph"><span class="graph_in"></span></span>98%
+                            </li>
+                            <li>
+                                <span class="graph"><span class="graph_in"></span></span>87%
+                            </li>
+                            <li>
+                                <span class="graph"><span class="graph_in"></span></span>73%
+                            </li>
+                            <li>
+                                <span class="graph"><span class="graph_in"></span></span>62%
+                            </li>
+                            <li>
+                                <span class="graph"><span class="graph_in"></span></span>55%
+                            </li>
+                            <li>
+                                <span class="graph"><span class="graph_in"></span></span>51%
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Web Story 메인 페이지 -->
+            <div id="page_3" class="folder_page">
+                <div class="menu_bar">
+                    <ul class="menu_web_story">
+                        <li class="p-1"><a href="#page_1">About Me</a></li>
+                        <li class="p-2"><a href="#page_2">Info & Skills</a></li>
+                        <li class="p-3 on"><a href="#page_3">Web Story</a></li>
+                        <li class="p-4"><a href="#page_5">Edit Story</a></li>
+                        <li class="p-5"><a href="#page_7">Contact</a></li>
+                    </ul>
+                    <button type="button" class="img_close_button"></button>
+                </div>
+                <div id="contents_3">
+                    <div class="click_contents">
+                        <img class="dot_round" src="images/dot-round.png" alt="dot_round"> <!-- 돌아가는 움직임 추가 -->
+                        <a class="portfolio_button" href="#view_page_1">Portfolio</a>
+                        <a class="coffeemama_button" href="#view_page_2"><span>COFFEE<br>MAMA</span></a>
+                        <a class="logitechg_button" href="#view_page_3">logitech G</a>
+                        <p>보고 싶은 작업물에 마우스를 올리거나 클릭해 보세요!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Web Story 세부 페이지-->
+            <div id="page_4" class="folder_page">
+                <div class="menu_bar">
+                    <ul class="menu_web_story">
+                        <li class="p-1"><a href="#page_1">About Me</a></li>
+                        <li class="p-2"><a href="#page_2">Info & Skills</a></li>
+                        <li class="p-3 on"><a href="#page_3">Web Story</a></li>
+                        <li class="p-4"><a href="#page_5">Edit Story</a></li>
+                        <li class="p-5"><a href="#page_7">Contact</a></li>
+                    </ul>
+                    <button type="button" class="img_close_button"></button>
+                </div>
+                <div id="contents_4">
+                    <div id="view_page_1" class="wpage">
+                        <div class="viewer_toolbar">
+                            <ul class="toolbar_left">
+                                <li class="back"><a href="#page_3">뒤로 가기</a></li>
+                            </ul>
+                            <ul class="toolbar_right">
+                                <li class="previous"><a href="#view_page_3">이전 작업</a></li>
+                                <li class="weblist"><a href="#web_list">목록 보기</a></li>
+                                <li class="next"><a href="#view_page_2">다음 작업</a></li> 
+                            </ul>
+                        </div>
+                        <div class="preview">
+                            <button class="view_button"><a href="#" target="_blank">VIEW</a></button>
+                        </div>
+                        <div class="account">
+                            <h3>Portfolio</h3>
+                            <h4>작업 기간</h4>
+                            <p>기획 -일, 디자인 -일, 코드구현 -일</p>
+                            <h4>기여도</h4>
+                            <p>기획 + 디자인 + 퍼블리싱 100%</p>
+                            <h4>사용 프로그램</h4>
+                            <p>Photoshop, Illustrator, Visual Studio Code</p>
+                            <h4>프로젝트 소개</h4>
+                            <p>제가 만든 작업물을 저만의 스타일로 전달하기 위해 개인 사이트를 만들었습니다.</p>
+                        </div>
+                    </div>
+                    <div id="view_page_2" class="wpage">
+                        <div class="viewer_toolbar">
+                            <ul class="toolbar_left">
+                                <li class="back"><a href="#page_3">뒤로 가기</a></li>
+                            </ul>
+                            <ul class="toolbar_right">
+                                <li class="previous"><a href="#view_page_1">이전 작업</a></li>
+                                <li class="weblist"><a href="#web_list">목록 보기</a></li>
+                                <li class="next"><a href="#view_page_3">다음 작업</a></li> 
+                            </ul>
+                        </div>
+                        <div class="preview">
+                            <button class="view_button"><a href="#" target="_blank">VIEW</a></button>
+                        </div>
+                        <div class="account">
+                            <h3>COFFEE MAMA</h3>
+                            <h4>작업 기간</h4>
+                            <p>기획 -일, 디자인 -일, 코드구현 -일</p>
+                            <h4>기여도</h4>
+                            <p>기획 + 디자인 + 퍼블리싱 100%</p>
+                            <h4>사용 프로그램</h4>
+                            <p>Photoshop, Illustrator, Visual Studio Code</p>
+                            <h4>프로젝트 소개</h4>
+                            <p>기존 커피마마의 홈페이지는 너무 단조롭고 카페 분위기가 부족하다 생각하여 리뉴얼 하였습니다.</p>
+                        </div>
+                    </div>
+                    <div id="view_page_3" class="wpage">
+                        <div class="viewer_toolbar">
+                            <ul class="toolbar_left">
+                                <li class="back"><a href="#page_3">뒤로 가기</a></li>
+                            </ul>
+                            <ul class="toolbar_right">
+                                <li class="previous"><a href="#view_page_2">이전 작업</a></li>
+                                <li class="weblist"><a href="#web_list">목록 보기</a></li>
+                                <li class="next"><a href="#view_page_1">다음 작업</a></li> 
+                            </ul>
+                        </div>
+                        <div class="preview">
+                            <button class="view_button"><a href="#" target="_blank">VIEW</a></button>
+                        </div>
+                        <div class="account">
+                            <h3>logitech G</h3>
+                            <h4>작업 기간</h4>
+                            <p>기획 -일, 디자인 -일, 코드구현 -일</p>
+                            <h4>기여도</h4>
+                            <p>기획 + 디자인 + 퍼블리싱 100%</p>
+                            <h4>사용 프로그램</h4>
+                            <p>Photoshop, Illustrator, Visual Studio Code</p>
+                            <h4>프로젝트 소개</h4>
+                            <p>기존 logitech G 홈페이지는 복잡하고 눈에 들어오지 않는다 생각하여 리뉴얼 하였습니다.</p>
+                        </div>
+                    </div>
+                    <div id="web_list">
+                        <ul>
+                            <li><a href="#view_page_1">Portfolio</a></li>
+                            <li><a href="#view_page_2">COFFEEMAMA</a></li>
+                            <li><a href="#view_page_3">logitecg G</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Edit Story 메인 페이지 -->
+            <div id="page_5" class="folder_page">
+                <div class="menu_bar">
+                    <ul class="menu_edit_story">
+                        <li class="p-1"><a href="#page_1">About Me</a></li>
+                        <li class="p-2"><a href="#page_2">Info & Skills</a></li>
+                        <li class="p-3"><a href="#page_3">Web Story</a></li>
+                        <li class="p-4 on"><a href="#page_5">Edit Story</a></li>
+                        <li class="p-5"><a href="#page_7">Contact</a></li>
+                    </ul>
+                    <button type="button" class="img_close_button"></button>
+                </div>
+                <div id="contents_5">
+                    <div class="click_contents">
+                        <img class="dot_round" src="images/dot-round.png" alt="dot_round"> <!-- 돌아가는 움직임 추가 -->
+                        <a href="#" class="apilko_button">Apilko</a>
+                        <a href="#" class="welstory_button">Welstory</a>
+                        <a href="#" class="moaelgaa_button">MoaElgaa</a>
+                        <a href="#" class="huton_button">Huton</a>
+                        <a href="#" class="leaders_button"><span>LEADERS<br>GOLF LAND</span></a>
+                        <p>보고 싶은 작업물에 마우스를 올리거나 클릭해 보세요!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Edit Story 세부 페이지 -->
+            <div id="page_6" class="folder_page">
+                <div class="menu_bar">
+                    <ul class="menu_edit_story">
+                        <li class="p-1"><a href="#page_1">About Me</a></li>
+                        <li class="p-2"><a href="#page_2">Info & Skills</a></li>
+                        <li class="p-3"><a href="#page_3">Web Story</a></li>
+                        <li class="p-4 on"><a href="#page_5">Edit Story</a></li>
+                        <li class="p-5"><a href="#page_7">Contact</a></li>
+                    </ul>
+                    <button type="button" class="img_close_button"></button>
+                </div>
+                <div id="contents_6">
+                    <div id="view_apilko" class="epage">
+                        <div class="viewer_toolbar">
+                            <ul class="toolbar_left">
+                                <li class="back"><a href="#page_3">뒤로 가기</a></li>
+                            </ul>
+                            <ul class="toolbar_right">
+                                <li class="previous"><a href="#">이전 작업</a></li>
+                                <li class="editlist"><a href="#">목록 보기</a></li>
+                                <li class="next"><a href="#">다음 작업</a></li> 
+                            </ul>
+                        </div>
+                        <div class="text_wrap">
+                            <h3>Apilko</h3>
+                            <p>
+                                아필코는 브런치 카페이지만 와인과 하이볼도 함께 판매하는 카페입니다
+                            </p>
+                            <p>
+                                대표 색상인 핑크색 계열과 카페를 강조할 수 있도록 브라운 계열을 주로 사용하였습니다                               
+                            </p>
+                            <p>                            
+                                와인과 하이볼 판매를 강조하는 현수막 디자인은 진한 붉은색을 사용하여 조금 더 무겁고 잔잔한 분위기를 주었습니다
+                            </p>
+                        </div>
+                        <div class="gallery">
+                            <div class="gallery_wrap">
+                                <img src="images/apilko-1.jpg" alt="apilko-xbanner">
+                                <img src="images/apilko-3.jpg" alt="apilko-banner">
+                                <img src="images/apilko-2.jpg" alt="apilko-poster">
+                            </div>
+                        </div>
+
+                        <button type="button" class="minus_button"></button>
+                        <button type="button" class="plus_button"></button>
+                    </div>
+                    <div id="view_welstory" class="epage">
+                        <div class="viewer_toolbar">
+                            <ul class="toolbar_left">
+                                <li class="back"><a href="#page_3">뒤로 가기</a></li>
+                            </ul>
+                            <ul class="toolbar_right">
+                                <li class="previous"><a href="#">이전 작업</a></li>
+                                <li class="editlist"><a href="#">목록 보기</a></li>
+                                <li class="next"><a href="#">다음 작업</a></li> 
+                            </ul>
+                        </div>
+                        <div class="text_wrap">
+                            <h3>Welstory</h3>
+                            <p>달마다 각 프로모션의 주제에 따라 어울리는 분위기를 생각하며 디자인하였습니다.</p>
+                            <p>2월 프로모션에서는 신축년을 나타내는 소와 전통 무늬들을 사용하였습니다.</p>
+                            <p>3월 프로모션에서는 봄과 연관 지어 벚꽃을 디자인에 사용하였습니다.</p>
+                            <p>4월 프로모션은 쿡방 분위기를 살려 디자인하였습니다.</p>
+                        </div>
+                        <div class="gallery">
+                            <div class="gallery_wrap">
+                                <img src="images/welstory-3.jpg" alt="welstory-promotion4">
+                                <img src="images/welstory-2.jpg" alt="welstory-promotion3">
+                                <img src="images/welstory-1.jpg" alt="welstory-promotion2">
+                            </div>
+                        </div>
+                        <button type="button" class="minus_button"></button>
+                        <button type="button" class="plus_button"></button>
+                    </div>
+                    <div id="view_moaelgaa" class="epage">
+                        <div class="viewer_toolbar">
+                            <ul class="toolbar_left">
+                                <li class="back"><a href="#page_3">뒤로 가기</a></li>
+                            </ul>
+                            <ul class="toolbar_right">
+                                <li class="previous"><a href="#">이전 작업</a></li>
+                                <li class="editlist"><a href="#">목록 보기</a></li>
+                                <li class="next"><a href="#">다음 작업</a></li> 
+                            </ul>
+                        </div>
+                        <div class="text_wrap">
+                            <h3>MoaElgaa</h3>
+                            <p>모아엘가 브랜드를 대표하는 색깔을 사용하여 천왕역을 강조하기 위해 천왕역 색을 함께 사용하였습니다.</p>
+                            <p>투시도 및 광역조감도 등 CG가 들어가는 리플렛에는 지하철 폴사인을 함께 넣어 지하철 역이 가까운 것을 강조하였습니다.</p>
+                        </div>
+                        <div class="gallery">
+                            <div class="gallery_wrap">
+                                <img src="images/moaelgaa-xbanner.jpg" alt="moaelgaa-xbanner">
+                                <img src="images/moaelgaa-leaflet.jpg" alt="moaelgaa-leaflet">
+                                <img src="images/moaelgaa-namecard.jpg" alt="moaelgaa-namecard">
+                            </div>
+                        </div>
+                        <button type="button" class="minus_button"></button>
+                        <button type="button" class="plus_button"></button>
+                    </div>
+                    <div id="view_huton" class="epage">
+                        <div class="viewer_toolbar">
+                            <ul class="toolbar_left">
+                                <li class="back"><a href="#page_3">뒤로 가기</a></li>
+                            </ul>
+                            <ul class="toolbar_right">
+                                <li class="previous"><a href="#">이전 작업</a></li>
+                                <li class="editlist"><a href="#">목록 보기</a></li>
+                                <li class="next"><a href="#">다음 작업</a></li> 
+                            </ul>
+                        </div>
+                        <div class="text_wrap">
+                            <h3>Huton</h3>
+                            <p>모아엘가 브랜드를 대표하는 색깔을 사용하여 천왕역을 강조하기 위해 천왕역 색을 함께 사용하였습니다.</p>
+                            <p>투시도 및 광역조감도 등 CG가 들어가는 리플렛에는 지하철 폴사인을 함께 넣어 지하철 역이 가까운 것을 강조하였습니다.</p>
+                        </div>
+                        <div class="gallery">
+                            <div class="gallery_wrap">
+                                <img src="images/moaelgaa-xbanner.jpg" alt="moaelgaa-xbanner">
+                                <img src="images/moaelgaa-leaflet.jpg" alt="moaelgaa-leaflet">
+                                <img src="images/huton-1.jpg" alt="moaelgaa-namecard">
+                            </div>
+                        </div>
+                        <button type="button" class="minus_button"></button>
+                        <button type="button" class="plus_button"></button>
+                    </div>
+                    <div id="view_leaders" class="epage">
+                        <div class="viewer_toolbar">
+                            <ul class="toolbar_left">
+                                <li class="back"><a href="#page_3">뒤로 가기</a></li>
+                            </ul>
+                            <ul class="toolbar_right">
+                                <li class="previous"><a href="#">이전 작업</a></li>
+                                <li class="editlist"><a href="#">목록 보기</a></li>
+                                <li class="next"><a href="#">다음 작업</a></li> 
+                            </ul>
+                        </div>
+                        <div class="text_wrap">
+                            <h3>LEADERS GOLF LAND</h3>
+                            <p>모아엘가 브랜드를 대표하는 색깔을 사용하여 천왕역을 강조하기 위해 천왕역 색을 함께 사용하였습니다.</p>
+                            <p>투시도 및 광역조감도 등 CG가 들어가는 리플렛에는 지하철 폴사인을 함께 넣어 지하철 역이 가까운 것을 강조하였습니다.</p>
+                        </div>
+                        <div class="gallery">
+                            <div class="gallery_wrap">
+                                <img src="images/moaelgaa-xbanner.jpg" alt="moaelgaa-xbanner">
+                                <img src="images/moaelgaa-leaflet.jpg" alt="moaelgaa-leaflet">
+                                <img src="images/leaders-1.jpg" alt="moaelgaa-namecard">
+                            </div>
+                        </div>
+                        <button type="button" class="minus_button"></button>
+                        <button type="button" class="plus_button"></button>
+                    </div>
+                    <div id="edit_list">
+                        <ul>
+                            <li><a href="#view_apilko">Apilko</a></li>
+                            <li><a href="#view_welstory">Welstory</a></li>
+                            <li><a href="#view_moaelgaa">MoaElgaa</a></li>
+                            <li><a href="#view_huton">Huton</a></li>
+                            <li><a href="#view_leaders">LEADERS GOLF LAND</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact 페이지 -->
+            <div id="page_7" class="folder_page">
+                <div class="menu_bar">
+                    <ul class="menu_contact"> <!-- 배경 이미지 적용하기 -->
+                        <li class="p-1"><a href="#page_1">About Me</a></li>
+                        <li class="p-2"><a href="#page_2">Info & Skills</a></li>
+                        <li class="p-3"><a href="#page_3">Web Story</a></li>
+                        <li class="p-4"><a href="#page_5">Edit Story</a></li>
+                        <li class="p-5 on"><a href="#page_7">Contact</a></li>
+                    </ul>
+                    <button type="button" class="img_close_button"></button>
+                </div>
+                <div id="contents_7">
+                    <div class="contact_collage">
+                        <div class="qr_code_img"></div> <!-- 배경 이미지 설정 -->
+                        <div class="contact_telephone">
+                            <ul>
+                                <li>010-3826-6025</li>
+                                <li>cncn6025@naver.com</li>
+                                <li>ohizkrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
